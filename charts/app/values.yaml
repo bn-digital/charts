@@ -125,7 +125,7 @@ ingress:
       enabled: false
       name: letsencrypt
       server: https://acme-v02.api.letsencrypt.org/directory
-  uploadSize: 5m
+  uploadSize: 50m
   proxy:
     regex: true
     rewrite: true
