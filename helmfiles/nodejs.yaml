@@ -21,6 +21,8 @@ releases:
         value: 'Always'
       - name: ingress.host
         value: '{{ env "DOMAIN" | default "" }}'
+      - name: ingress.uploadSize
+        value: '10m'
       - name: ingress.proxy.paths
         value: ''
       - name: ingress.proxy.regex
