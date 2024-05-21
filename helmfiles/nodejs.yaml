@@ -4,8 +4,14 @@ repositories:
 
 environments:
   default:
+    values:
+      - ingressUploadSize: 25m
   staging:
+    values:
+      - ingressUploadSize: 25m
   production:
+    values:
+      - ingressUploadSize: 25m
 
 releases:
   - name: '{{ requiredEnv "APP_NAME" }}'
@@ -22,7 +28,7 @@ releases:
       - name: ingress.host
         value: '{{ env "DOMAIN" | default "" }}'
       - name: ingress.uploadSize
-        value: '10m'
+        value: {{ .Values.ingressUploadSize }}
       - name: ingress.proxy.paths
         value: ''
       - name: ingress.proxy.regex
