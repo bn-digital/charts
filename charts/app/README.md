@@ -69,9 +69,9 @@ Common Web application Helm Chart
 | volumes                                        | list   | `[]`                                                 |                                                                               |
 | autoscaling.enabled                            | bool   | `false`                                              | Enable or disable Horizontal Pod Autoscaling                                  |
 | autoscaling.minReplicas                        | int    | `1`                                                  | Minimum number of replicas for autoscaling                                    |
-| autoscaling.maxReplicas                        | int    | `10`                                                 | Maximum number of replicas for autoscaling                                    |
-| autoscaling.targetCPUUtilizationPercentage     | int    | `80`                                                 | Target CPU utilization percentage for autoscaling                             |
-| autoscaling.targetMemoryUtilizationPercentage  | int    | `80`                                                 | Target memory utilization percentage for autoscaling                          |
+| autoscaling.maxReplicas                        | int    | `5`                                                  | Maximum number of replicas for autoscaling                                    |
+| autoscaling.targetCPUUtilizationPercentage     | int    | `90`                                                 | Target CPU utilization percentage for autoscaling                             |
+| autoscaling.targetMemoryUtilizationPercentage  | int    | `90`                                                 | Target memory utilization percentage for autoscaling                          |
 
 
 ----------------------------------------------
